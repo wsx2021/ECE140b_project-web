@@ -24,10 +24,6 @@
     --font: Trebuchet MS;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 body {
     font-size: calc(1rem + 1vw);
     background: var(--page-color);
