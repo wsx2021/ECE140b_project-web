@@ -95,7 +95,6 @@ h6,
 footer {
     padding: var(--padding-lg);
     margin: var(--margin-med) auto;
-    /*   background: var(--light-color); */
     width: 100%;
 }
 
