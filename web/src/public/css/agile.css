@@ -131,3 +131,13 @@ table td {
 table tr:nth-child(odd) {
     background-color: var(--light-color);
 }
+
+.btn.small {
+    font-size: calc(0.5rem + 0.5vw);
+    padding: 0.4rem 0.8rem;
+}
+
+.btn.large {
+    font-size: calc(1.2rem + 1.4vw);
+    padding: var(--padding-lg) var(--padding-xxl);
+}
