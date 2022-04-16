@@ -109,6 +109,38 @@ footer {
     height: 100%;
 }
 
+
+/* horizontal line with text label */
+
+.separator {
+    font-size: calc(1rem + 1vw);
+    color: var(--accent-color);
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    margin: calc(2rem + 3vw) auto;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid var(--dark-color);
+}
+
+.separator::before {
+    margin-right: 1rem;
+}
+
+.separator::after {
+    margin-left: 1rem;
+}
+
+.margin-top-xl {
+    margin-top: var(--margin-xl);
+}
+
 table {
     table-layout: fixed;
     border-collapse: collapse;
