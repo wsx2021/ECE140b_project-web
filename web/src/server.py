@@ -18,7 +18,7 @@ def get_home(req):
   records = cursor.fetchall()
   db.close()
 
-  return render_to_response('templates/home.html', {'users': records}, request=req)
+  return render_to_response('templates/kvp.html', {'users': records}, request=req)
 
 def get_kvp(req):
   # Connect to the database and retrieve the users
