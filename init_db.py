@@ -25,8 +25,8 @@ try:
       id          integer  AUTO_INCREMENT PRIMARY KEY,
       first_name  VARCHAR(30) NOT NULL,
       last_name   VARCHAR(30) NOT NULL,
-      email       VARCHAR(50) NOT NULL,
-      password    VARCHAR(20) NOT NULL,
+      position       VARCHAR(50) NOT NULL,
+      description    VARCHAR(100) NOT NULL,
       created_at  TIMESTAMP
     );
   """)
@@ -34,12 +34,12 @@ except:
   print("Users table already exists. Not recreating it.")
 
 # Insert Records
-query = "insert into Users (first_name, last_name, email, password, created_at) values (%s, %s, %s, %s, %s)"
+query = "insert into Users (first_name, last_name, position,  description, created_at) values (%s, %s, %s, %s, %s)"
 values = [
-  ('rick','gessner','rick@gessner.com', 'abc123', '2020-02-20 12:00:00'),
-  ('ramsin','khoshabeh','ramsin@khoshabeh.com', 'abc123', '2020-02-20 12:00:00'),
-  ('al','pisano','al@pisano.com', 'abc123', '2020-02-20 12:00:00'),
-  ('truong','nguyen','truong@nguyen.com', 'abc123', '2020-02-20 12:00:00')
+  ('Shixuan','Wu','Product manager', 'manages the product strategy, vision and development', '2020-02-20 12:00:00'),
+  ('Xunhao','Yang','Business development manager', 'finds ways to grow our business from both a marketing and sales standpoint.', '2020-02-20 12:00:00'),
+  ('Gaopo','Huang','Technology manager (software)', 'member who specializes in software technology and development', '2020-02-20 12:00:00'),
+  ('Junzhe','Luo','Technology manager (hardware)', 'member who specializes in hardware technology and development', '2020-02-20 12:00:00')
 ]
 cursor.executemany(query, values)
 db.commit()
