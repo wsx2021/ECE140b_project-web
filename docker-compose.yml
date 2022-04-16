@@ -19,7 +19,7 @@ services:
     env_file:
       ./credentials.env
     ports:
-      - 3306:3307 # host : container
+      - 3306:3306 # host : container
     volumes:
       - ./db:/var/lib/mysql # persistent DB when container is stopped
     container_name: project-db
