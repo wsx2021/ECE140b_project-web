@@ -34,8 +34,8 @@ if __name__ == '__main__':
 
   config.add_route('get_home', '/')
   config.add_view(get_home, route_name='get_home')
-  config.add_route('get_kvp', '/')
-  config.add_view(get_kvp, route_name='get_kvp')
+  config.add_route('kvp', '/')
+  config.add_view(get_kvp, route_name='kvp')
 
   config.add_static_view(name='/', path='./public', cache_max_age=3600)
 
