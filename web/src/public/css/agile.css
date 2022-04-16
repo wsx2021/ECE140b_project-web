@@ -112,7 +112,7 @@ footer {
 table {
     table-layout: fixed;
     border-collapse: collapse;
-    width: 100%;
+    width: 70%;
 }
 
 table th {
@@ -124,20 +124,9 @@ table th,
 table td {
     margin: 0px;
     text-align: left;
-    padding: var(--padding-med);
     border: 1px solid var(--dark-color);
 }
 
 table tr:nth-child(odd) {
     background-color: var(--light-color);
-}
-
-.btn.small {
-    font-size: calc(0.5rem + 0.5vw);
-    padding: 0.4rem 0.8rem;
-}
-
-.btn.large {
-    font-size: calc(1.2rem + 1.4vw);
-    padding: var(--padding-lg) var(--padding-xxl);
 }
