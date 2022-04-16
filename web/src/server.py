@@ -27,7 +27,7 @@ def get_kvp(req):
   cursor.execute("select first_name, last_name, position, description from Users;")
   records = cursor.fetchall()
   db.close()
-
+  print("kvp page")
   return render_to_response('templates/kvp.html', {'users': records}, request=req)
 
 ''' Route Configurations '''
