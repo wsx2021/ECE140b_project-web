@@ -14,7 +14,7 @@ def get_home(req):
   # Connect to the database and retrieve the users
   db = mysql.connect(host=db_host, database=db_name, user=db_user, passwd=db_pass)
   cursor = db.cursor()
-  cursor.execute("select first_name, last_name, position,  description from Users;")
+  cursor.execute("select first_name, last_name, position, description from Users;")
   records = cursor.fetchall()
   db.close()
 
