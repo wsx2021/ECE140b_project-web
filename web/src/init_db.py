@@ -34,7 +34,7 @@ except:
   print("Users table already exists. Not recreating it.")
 
 # Insert Records
-query = "insert into Users (first_name, last_name, position, description, created_at) values (%s, %s, %s, %s, %s)"
+query = "insert into Users (first_name, last_name, position,  description, created_at) values (%s, %s, %s, %s, %s)"
 values = [
   ('Shixuan','Wu','Product manager', 'manages the product strategy, vision and development', '2020-02-20 12:00:00'),
   ('Xunhao','Yang','Business development manager', 'finds ways to grow our business from both a marketing and sales standpoint.', '2020-02-20 12:00:00'),
