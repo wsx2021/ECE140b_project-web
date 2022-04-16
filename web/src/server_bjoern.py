@@ -20,6 +20,16 @@ def get_home(req):
 
   return render_to_response('templates/home.html', {'users': records}, request=req)
 
+def get_kvp(req):
+  # Connect to the database and retrieve the users
+  db = mysql.connect(host=db_host, database=db_name, user=db_user, passwd=db_pass)
+  cursor = db.cursor()
+  cursor.execute("select first_name, last_name, position,  description from Users;")
+  records = cursor.fetchall()
+  db.close()
+
+  return render_to_response('templates/kvp.html', {'users': records}, request=req)
+
 ''' Route Configurations '''
 if __name__ == '__main__':
   config = Configurator()
@@ -29,6 +39,8 @@ if __name__ == '__main__':
 
   config.add_route('get_home', '/')
   config.add_view(get_home, route_name='get_home')
+  config.add_route('kvp', '/')
+  config.add_view(get_kvp, route_name='kvp')
 
   config.add_static_view(name='/', path='./public', cache_max_age=3600)
 
