@@ -35,6 +35,28 @@
     <br>
 
 
+    <div class='separator'>Database Records</div>
+
+    <table class='margin-top-xl'>
+        <thead>
+            <tr>
+                <th class='small'> First Name </th>
+                <th class='medium'> Last Name </th>
+                <th class='large'> Position </th>
+                <th class='large'> Description </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td> {{user[0]}} </td>
+                <td> {{user[1]}} </td>
+                <td> {{user[2]}} </td>
+                <td> {{user[3]}} </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 
 
     <h4> About Our Team</h4>
