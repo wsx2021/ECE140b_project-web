@@ -145,6 +145,7 @@ table {
     table-layout: fixed;
     border-collapse: collapse;
     width: 70%;
+    font-size: calc(0.5rem + 1vw);
 }
 
 table th {
