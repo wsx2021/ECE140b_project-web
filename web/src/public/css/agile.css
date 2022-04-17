@@ -96,11 +96,14 @@ h2,
 h3,
 h4,
 h5,
-h6,
 footer {
     padding: var(--padding-lg);
     margin: var(--margin-med) auto;
     width: 100%;
+}
+
+.extra-small {
+    font-size: calc(0.1rem + 0.5vw);
 }
 
 .right {
