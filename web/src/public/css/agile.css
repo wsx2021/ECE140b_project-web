@@ -41,6 +41,13 @@ ul li {
     font-size: calc(0.8rem + 1vw);
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
 
 /* -- ELEMENTS -- */
 
