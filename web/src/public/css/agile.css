@@ -487,8 +487,6 @@ table tr:nth-child(odd) {
 /* Tooltip text */
 
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
     background-color: black;
     color: #fff;
     text-align: center;
@@ -498,6 +496,7 @@ table tr:nth-child(odd) {
     position: absolute;
     z-index: 1;
     visibility: hidden;
+    font-size: calc(0.5rem + 1vw);
 }
 
 
