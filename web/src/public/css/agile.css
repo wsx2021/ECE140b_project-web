@@ -496,7 +496,7 @@ table tr:nth-child(odd) {
     border-radius: 6px;
     /* Position the tooltip text - see examples below! */
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     visibility: hidden;
 }
 
