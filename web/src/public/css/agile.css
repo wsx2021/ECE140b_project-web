@@ -523,7 +523,6 @@ table tr:nth-child(odd) {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    visibility: hidden;
 }
 
 .sidenav a {
@@ -537,7 +536,6 @@ table tr:nth-child(odd) {
 
 .sidenav a:hover {
     color: #f1f1f1;
-    visibility: visible;
 }
 
 .sidenav .closebtn {
