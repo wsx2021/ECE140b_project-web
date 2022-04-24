@@ -487,6 +487,7 @@ table tr:nth-child(odd) {
 /* Tooltip text */
 
 .tooltip .tooltiptext {
+    width: 120px;
     background-color: black;
     color: #fff;
     text-align: center;
