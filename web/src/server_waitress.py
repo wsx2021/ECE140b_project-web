@@ -51,7 +51,9 @@ if __name__ == '__main__':
 
   config.add_route('get_home', '/')
   config.add_view(get_home, route_name='get_home')
-  config.add_route('kvp', '/')
+  config.add_route('get_home', '/home')
+  config.add_view(get_home, route_name='get_home')
+  config.add_route('kvp', '/kvp')
   config.add_view(get_kvp, route_name='kvp')
   config.add_route('product', '/product')
   config.add_view(get_product, route_name='product')
