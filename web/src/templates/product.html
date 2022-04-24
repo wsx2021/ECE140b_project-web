@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Info -->
+    <title>ECE140b Project: Pill Care</title>
+    <meta name="author" content="Shixuan">
+    <meta name="description" content="Project description">
+
+    <link rel="stylesheet" type="text/css" href="css/agile.css">
+</head>
+
+<body>
+
+    <div class='hero center'>
+        <h1> Pill Care</h1>
+        <h2>Shixuan Wu</h2>
+
+    </div>
+    <br>
+    <p>Description (Tentative):
+    </p>
+    <p>A pill-taking reminder consists of multiple stickers and a box. Family members can help the patients set up the alarm by recording their voices and sticking the sticker to the bottom of the pill bottle. They also need to set up the alarm time per
+        day.
+
+
+    </p>
+    <p>
+        During the time the user needs to take pills, the alarm will sound indicating which sticker/pills they need to take with the pre-recorded sounds from their family members/physicians. The user then can take the bottle next to the reminder, if it’s the
+        correct one, the reminder will state that it's correct and the amount the user should take each time; if it's not, the reminder will ask the user to try another bottle.
+
+    </p>
+
+
+    <br>
+    <br>
+    <a href="kvp">Our Key Value Proposition Here!</a>
+    <br>
+    <br>
+    <div class='separator'>Target Customers</div>
+
+    <div>
+
+
+        <h5>Family members who</h5>
+        <ul>
+            <li>have elders with vision or hearing problems and need to take pills frequently; </li>
+            <li>care a lot for their families; </li>
+            <li>Can’t be around the elders 24/7.</li>
+        </ul>
+    </div>
+    <br>
+    <br>
+
+
+    <div class='separator'>What it does?</div>
+    <p>During the time the user needs to take pills, the alarm will sound indicating which sticker/pills they need to take with the pre-recorded sounds from their family members/physicians. The user then can take the bottle next to the reminder, if it’s
+        the correct one, the reminder will state that it's correct and the amount the user should take each time; if it's not, the reminder will ask the user to try another bottle.
+    </p>
+    <br>
+    <br>
+
+    <div class='separator'>How it work?</div>
+    <div class='content-box'>
+
+        <div class='border'>
+            <div class='center'>Set up Stage</div>
+            <img src="/image/set-up.jpg">
+        </div>
+
+        <div class='border'>
+            <div class='center'>Use Stage</div>
+            <img src="/image/use-stage.jpg">
+        </div>
+
+
+    </div>
+
+
+
+    <div class='separator'>Key Benefit</div>
+
+    <div class='content-box'>
+
+        <div class='border'>
+            <div class='center'>Alarm</div>
+            <div class='smaller'> the alarm will sound indicating which sticker/pills they need to take with the pre-recorded sounds from their family members/physicians.</div>
+        </div>
+
+        <div class='border'>
+            <div class='center'>Screen</div>
+            <div class='smaller'>screen that can be attached to the Pill Care to display large font text for hearing-impaired elders</div>
+        </div>
+        <div class='border'>
+            <div class='center'>App</div>
+            <div class='smaller'>app which sends notification to the user and the family whether pills need to be taken, and when the pills are taken by the patient.</div>
+        </div>
+        <div class='border'>
+            <div class='center'>Customerized Voice recorder</div>
+            <div class='smaller'>Voice of your family memeber will be the reminders which will state that it's correct and the amount the user should take each time; if it's not, the reminder will ask the user to try another bottle. </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class='separator'>About Our Team</div>
+
+    <table class='margin-top-xl center'>
+        <thead>
+            <tr>
+                <th class='small'> First Name </th>
+                <th class='medium'> Last Name </th>
+                <th class='large'> Position </th>
+                <th class='large'> Description </th>
+            </tr>
+        </thead>
+        <tbody class="smaller">
+            {% for user in users %}
+            <tr>
+                <td> {{user[0]}} </td>
+                <td> {{user[1]}} </td>
+                <td> {{user[2]}} </td>
+                <td> {{user[3]}} </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+
+
+    <br>
+    <br>
+    <footer class='right'>
+        <p>Author: Shixuan Wu</p>
+        <p><a href="mailto:shw003@ucsd.edu">shw003@ucsd.edu</a></p>
+    </footer>
+    <br>
+    <br>
+</body>
+
+</html>
