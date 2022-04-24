@@ -65,6 +65,36 @@
 
     <br>
     <br>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#top">Back to top of page</a>
+        <a href="#customer">Target Customers</a>
+        <a href="#purpose">What it does?</a>
+        <a href="#process">How it work?</a>
+        <a href="#map">Empathy Map</a>
+        <a href="#team">About our team</a>
+    </div>
+    <a name="top"></a>
+    <div id="main">
+        <h2>Sidenav Push Example</h2>
+        <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+    <br>
+    <br>
+    <a name="customer"></a>
     <div class='separator'>Target Customers</div>
 
     <div>
@@ -80,14 +110,14 @@
     <br>
     <br>
 
-
+    <a name="purpose"></a>
     <div class='separator'>What it does?</div>
     <p>During the time the user needs to take pills, the alarm will sound indicating which sticker/pills they need to take with the pre-recorded sounds from their family members/physicians. The user then can take the bottle next to the reminder, if it’s
         the correct one, the reminder will state that it's correct and the amount the user should take each time; if it's not, the reminder will ask the user to try another bottle.
     </p>
     <br>
     <br>
-
+    <a name="process"></a>
     <div class='separator'>How it work?</div>
     <div class='content-box'>
 
@@ -105,7 +135,7 @@
     </div>
 
 
-
+    <a name="benefit"></a>
     <div class='separator'>Key Benefit</div>
 
     <div class='content-box'>
@@ -131,6 +161,7 @@
 
     <br>
     <br>
+    <a name="map"></a>
     <div class='separator'>Empathy Map</div>
 
 
@@ -153,6 +184,7 @@
 
     <br>
     <br>
+    <a name="team"></a>
     <div class='separator'>About Our Team</div>
 
     <table class='margin-top-xl center'>
