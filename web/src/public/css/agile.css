@@ -52,9 +52,6 @@ img {
 /* -- ELEMENTS -- */
 
 .hero {
-    position: absolute;
-    z-index: 2;
-    /* put .green-box above .dashed-box */
     background: var(--dark-color);
     color: white;
     padding: calc(1rem + 8vh) calc(1rem + 3vw) calc(3rem + 10vh) calc(1rem + 3vw);
@@ -499,7 +496,7 @@ table tr:nth-child(odd) {
     border-radius: 6px;
     /* Position the tooltip text - see examples below! */
     position: absolute;
-    z-index: 3;
+    z-index: 1;
     visibility: hidden;
 }
 
@@ -511,9 +508,6 @@ table tr:nth-child(odd) {
 }
 
 .tooltip .tooltiptext {
-    width: 120px;
-    top: 100%;
-    left: 50%;
-    margin-left: -60px;
-    /* Use half of the width (120/2 = 60), to center the tooltip */
+    top: -5px;
+    left: 105%;
 }
