@@ -523,6 +523,7 @@ table tr:nth-child(odd) {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    visibility: hidden;
 }
 
 .sidenav a {
