@@ -488,8 +488,8 @@ table tr:nth-child(odd) {
 
 .tooltip .tooltiptext {
     width: 120px;
-    background-color: var(--dark-color);
-    color: #fff;
+    background-color: #fff;
+    color: var(--dark-color);
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
