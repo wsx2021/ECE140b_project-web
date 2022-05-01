@@ -64,6 +64,11 @@ h4 {
     margin-top: 1rem;
 }
 
+.margin {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
 .center {
     margin-left: auto;
     margin-right: auto;
@@ -86,7 +91,7 @@ h4 {
 p {
     font-size: calc(0.5rem + 1vw);
     background: var(--page-color);
-    margin: 0px;
+    margin: 1px;
     font-family: var(--font);
     padding: 0 !important;
     padding: 90px 0 32px 0;
