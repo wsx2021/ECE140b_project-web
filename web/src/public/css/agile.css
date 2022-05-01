@@ -60,6 +60,8 @@ img {
 h4 {
     font-size: calc(1rem + 1.5vw);
     color: var(--accent-color-dark);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .center {
@@ -138,7 +140,7 @@ hr {
     border-top: dotted var(--accent-color);
     width: 90%;
     margin-bottom: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
     /*Rest of stuff here*/
 }
 
