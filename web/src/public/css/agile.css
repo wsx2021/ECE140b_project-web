@@ -134,6 +134,11 @@ footer {
     margin: calc(2rem + 3vw) auto;
 }
 
+hr {
+    border-top: 1px dotted var(--accent-color);
+    /*Rest of stuff here*/
+}
+
 .separator::before,
 .separator::after {
     content: "";
