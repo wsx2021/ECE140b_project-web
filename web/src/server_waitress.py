@@ -67,8 +67,8 @@ if __name__ == '__main__':
   config.add_view(get_kvp, route_name='kvp')
   config.add_route('product', '/product')
   config.add_view(get_product, route_name='product')
-  config.add_route('UIexample', '/UIexample')
-  config.add_view(get_design, route_name='UIexample')
+  config.add_route('ui_example', '/ui_example')
+  config.add_view(get_design, route_name='ui_example')
 
   config.add_static_view(name='/', path='./public', cache_max_age=3600)
 
