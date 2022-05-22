@@ -121,6 +121,13 @@ footer {
     padding: 10px;
 }
 
+.just_right {
+    position: absolute;
+    right: 0px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
 .smaller {
     font-size: calc(0.4rem + 1vw);
     font-family: var(--font);
