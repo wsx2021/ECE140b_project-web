@@ -61,6 +61,15 @@ def get_mvp(req):
 
   return render_to_response('templates/mvp.html', {'users': records}, request=req)  
 
+def get_revenue(req):
+  # Connect to the database and retrieve the users
+  db = mysql.connect(host=db_host, database=db_name, user=db_user, passwd=db_pass)
+  cursor = db.cursor()
+  cursor.execute("select first_name, last_name, position, description from Users;")
+  records = cursor.fetchall()
+  db.close()
+
+  return render_to_response('templates/revenue.html', {'users': records}, request=req) 
 
 ''' Route Configurations '''
 if __name__ == '__main__':
@@ -81,6 +90,8 @@ if __name__ == '__main__':
   config.add_view(get_design, route_name='ui_example')
   config.add_route('mvp', '/mvp')
   config.add_view(get_mvp, route_name='mvp')
+  config.add_route('revenue', '/revenue')
+  config.add_view(get_revenue, route_name='revenue')
 
   config.add_static_view(name='/', path='./public', cache_max_age=3600)
 
