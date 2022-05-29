@@ -562,6 +562,8 @@ table tr:nth-child(odd) {
     z-index: 3;
     visibility: hidden;
     font-size: calc(0.5rem + 1vw);
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 
