@@ -55,8 +55,6 @@ img {
     background: var(--dark-color);
     color: white;
     padding: calc(1rem + 8vh) calc(1rem + 3vw) calc(3rem + 10vh) calc(1rem + 3vw);
-    position: absolute;
-    z-index: 1;
 }
 
 h4 {
