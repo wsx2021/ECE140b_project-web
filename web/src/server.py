@@ -80,6 +80,17 @@ def get_source(req):
 
   return render_to_response('templates/source.html', {'users': records}, request=req) 
 
+def get_pivot(req):
+  # Connect to the database and retrieve the users
+  db = mysql.connect(host=db_host, database=db_name, user=db_user, passwd=db_pass)
+  cursor = db.cursor()
+  cursor.execute("select first_name, last_name, position, description from Users;")
+  records = cursor.fetchall()
+  db.close()
+
+  return render_to_response('templates/pivot.html', {'users': records}, request=req) 
+
+
 ''' Route Configurations '''
 if __name__ == '__main__':
   config = Configurator()
@@ -104,6 +115,8 @@ if __name__ == '__main__':
 
   config.add_route('source', '/source')
   config.add_view(get_source, route_name='source')
+  config.add_route('pivot', '/pivot')
+  config.add_view(get_pivot, route_name='pivot')
 
   config.add_static_view(name='/', path='./public', cache_max_age=3600)
 
