@@ -555,8 +555,8 @@ table tr:nth-child(odd) {
     background-color: #D3D3D3;
     color: var(--dark-color);
     text-align: center;
-    padding: 5px 0;
-    border-radius: 1rem;
+    padding: 0.1rem 0;
+    border-radius: 0.3rem;
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 3;
