@@ -614,10 +614,6 @@ table tr:nth-child(odd) {
     margin-left: 50px;
 }
 
-.space {
-    padding: 70px 0;
-}
-
 #main {
     transition: margin-left .5s;
     padding: 16px;
